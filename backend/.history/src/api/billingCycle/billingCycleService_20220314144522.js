@@ -22,13 +22,7 @@ BillingCycle.route('get', (req, res, next) => {
 })
 
 BillingCycle.route('count', (req, res, next) => {
-    BillingCycle.count((error, value) => {
-        if(error){
-            res.status(500).json({erros: [error]})
-        } else{
-            res.json({value})
-        }
-    })
+    BillingCycle.count()
 })
 
 module.exports = BillingCycle

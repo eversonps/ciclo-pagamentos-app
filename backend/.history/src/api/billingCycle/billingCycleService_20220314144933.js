@@ -26,7 +26,7 @@ BillingCycle.route('count', (req, res, next) => {
         if(error){
             res.status(500).json({erros: [error]})
         } else{
-            res.json({value})
+
         }
     })
 })
