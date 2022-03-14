@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors -- inline --hot",
+    "dev": "webpack-dev-server --progress --colors --inline --hot",
     "production": "webpack --progress -p"
   },
   "keywords": [],
@@ -25,6 +25,7 @@
     "font-awesome": "4.7.0",
     "ionicons": "3.0.0",
     "lodash": "4.17.4",
+    "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-redux": "4.4.6",
     "react-redux-toastr": "4.4.2",
