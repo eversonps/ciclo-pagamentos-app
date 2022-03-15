@@ -5,7 +5,7 @@ export default (state = INITIAL_STATE, action) => {
         case "TAB_SELECTED":
             return {...state, selected: action.payload}
         case "TAB_SHOWED":
-            return {...state, visible: action.payload}
+            return {...state, selected: action.payload}
         default:
             return state
     }

@@ -8,17 +8,14 @@ import {selectTab} from "./tabActions"
 class TabHeader extends Component{
     render(){
         const selected = this.props.tab.selected === this.props.target
-        const visible = this.props.tab.visible[this.props.target]
+        const visible = this.props.tab.visible
 
         return (
-            <IF test={visible}>
-                <li className={selected ? "active" : ""}>
-                    <a href="javascript:;" data-toogle="tab" data-target={this.props.target} onClick={() => this.props.selectTab(this.props.target)}>
-                        <i className={`fa fa-${this.props.icon}`}></i> {this.props.label}
-                    </a>
-                </li>   
-            </IF>
-            
+            <li className={selected ? "active" : ""}>
+                <a href="javascript:;" data-toogle="tab" data-target={this.props.target} onClick={() => this.props.selectTab(this.props.target)}>
+                    <i className={`fa fa-${this.props.icon}`}></i> {this.props.label}
+                </a>
+            </li>
         )
     }
 }

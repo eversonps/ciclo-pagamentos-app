@@ -17,7 +17,7 @@ import { selectTab, showTabs } from "../common/tab/tabActions";
 class BillingCycle extends Component{
     componentWillMount(){
         this.props.selectTab("tabList")
-        this.props.showTabs("tabList", "tabCreate")
+        this.props.showTabs("tabList")
     }
 
     render(){
