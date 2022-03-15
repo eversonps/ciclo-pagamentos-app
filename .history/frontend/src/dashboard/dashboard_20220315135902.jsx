@@ -11,9 +11,9 @@ class Dashboard extends Component{
                 <ContentHeader title="Dashboard" small="Versão 1.0"></ContentHeader>
                 <Content>
                     <Row>
-                        <ValueBox cols="12 4" color="green" icon="bank" value="R$ 10" text="Total de Créditos"></ValueBox>
-                        <ValueBox cols="12 4" color="red" icon="credit-card" value="R$ 10" text="Total de Debitos"></ValueBox>
-                        <ValueBox cols="12 4" color="blue" icon="money" value="R$ 0" text="Valor Consolidado"></ValueBox>
+                    <ValueBox cols="12 4" color="green" icon="bank" value="R$ 10" text="Total de Créditos"></ValueBox>
+                    <ValueBox cols="12 4" color="red" icon="credit-card" value="R$ 10" text="Total de Debitos"></ValueBox>
+                    <ValueBox cols="12 4" color="blue" icon="money" value="R$ 0" text="Valor Consolidado"></ValueBox>
                     </Row>
                 </Content>
             </div> 
