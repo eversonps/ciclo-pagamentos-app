@@ -9,9 +9,6 @@ export default props => {
         <div className="wrapper">
             <Header></Header>
             <SideBar></SideBar>
-            <div className="content-wrapper">
-                <h1>Content</h1>
-            </div>
             <Footer></Footer>
         </div>
     )
