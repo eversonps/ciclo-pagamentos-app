@@ -15,12 +15,7 @@ class BillingCycle extends Component{
                 <ContentHeader title="Ciclo de Pagamentos" small="Cadastro"></ContentHeader>
                 <Content>
                     <Tabs>
-                        <TabsHeader>
-                            <TabHeader label="Listar" icon="bars" target="tabList"></TabHeader>
-                            <TabHeader label="Incluir" icon="plus" target="tabCreate"></TabHeader>
-                            <TabHeader label="Alterar" icon="pencil" target="tabUpdate"></TabHeader>
-                            <TabHeader label="Excluir" icon="trash-o" target="tabDelete"></TabHeader>
-                        </TabsHeader>
+                        <TabsHeader></TabsHeader>
                         <TabsContent></TabsContent>
                     </Tabs>
                 </Content>            
