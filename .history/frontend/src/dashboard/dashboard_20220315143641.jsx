@@ -9,10 +9,6 @@ import { getSummary } from "./dashboardActions";
 import { connect } from "react-redux";
 
 class Dashboard extends Component{
-    componentWillMount(){
-        this.props.getSummary()
-    }
-
     render(){
         const {credit, debt} = this.props.summary
 
@@ -37,4 +33,4 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({getSummary}, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)
+export default connect(mapStateToProps)(Dashboard)
