@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { getList, showUpdate } from "./billingCycleActions"
+import { getList } from "./billingCycleActions"
 
 class BillingCycleList extends Component{
     componentWillMount(){
@@ -51,6 +51,6 @@ const mapStateToProps = state => ({
     list: state.BillingCycle.list
 })
 
-const mapDispatchToProps = dispatch => bindActionCreators({getList, showUpdate}, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({getList}, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(BillingCycleList)

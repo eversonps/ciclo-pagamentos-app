@@ -31,9 +31,10 @@ export function create(values){
     }
 }
 
-export function showUpdate(billingCycle){
-    return [
-        showTabs("tabUpdate"),
-        selectTab("tabUpdate")
-    ]
+export function showUpdate(values){
+    const request = axios.get(`${BASE_URL}/billingCycles`)
+    return {
+        type: "BILLING_CYCLES_FETCHED",
+        payload: request
+    }
 }
