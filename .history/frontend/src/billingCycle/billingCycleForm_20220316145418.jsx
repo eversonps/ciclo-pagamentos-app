@@ -10,8 +10,8 @@ class BillingCycleForm extends Component {
             <form role="form" onSubmit={handleSubmit}>
                 <div className="box-body">
                     <Field name="name" component={LabelAndInput} label="Nome" cols="12 4" placeholder="Informe o nome"></Field>
-                    <Field name="month" component={LabelAndInput} label="Mês" cols="12 4" placeholder="Informe o mês"></Field>
-                    <Field name="year" component={LabelAndInput} label="Ano" cols="12 4" placeholder="Informe o ano"></Field>
+                    <Field name="month" component={LabelAndInput} label="Mês" cols="12 4" placeholder="Informe o nome"></Field>
+                    <Field name="year" component={LabelAndInput} label="Ano" cols="12 4" placeholder="Informe o nome"></Field>
                 </div>
                 <div className="box-footer">
                     <button type="submit" className="btn btn-primary">Submit</button>
