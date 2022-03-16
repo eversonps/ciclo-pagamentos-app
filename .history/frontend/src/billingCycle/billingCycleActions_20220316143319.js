@@ -18,10 +18,7 @@ export function create(values){
         .then(resp => {
             toastr.success("Sucesso", "Operação realizada com sucesso")
             dispatch([
-                resetForm("billingCycleForm"),
-                getList(),
-                selectTab("tabList"),
-                showTabs("tabList", "tabCreate")
+                resetForm("billingCycleForm")
             ])
         }).catch(e => {
             e.response.data.errors.forEach(error => {
