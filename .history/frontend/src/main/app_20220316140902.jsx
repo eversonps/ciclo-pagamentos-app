@@ -15,7 +15,6 @@ export default props => {
                 <Routes></Routes>
             </div>
             <Footer></Footer>
-            <Messages></Messages>
         </div>
     )
 }

@@ -15,9 +15,9 @@ export function create(values){
     .then(resp => {
         toastr.success("Sucesso", "Operação realizada com sucesso")
     }).catch(e => {
-        e.response.data.errors.forEach(error => {
-            toastr.error("Erro", error)
-        })
+        toastr.error("Erro", e.response.data.errors.forEach(element => {
+            
+        });)
     })
 
     return {

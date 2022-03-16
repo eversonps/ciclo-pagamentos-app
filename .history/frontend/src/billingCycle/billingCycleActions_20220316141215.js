@@ -12,14 +12,7 @@ export function getList(){
 
 export function create(values){
     axios.post(`${BASE_URL}/billingCycles`, values)
-    .then(resp => {
-        toastr.success("Sucesso", "Operação realizada com sucesso")
-    }).catch(e => {
-        e.response.data.errors.forEach(error => {
-            toastr.error("Erro", error)
-        })
-    })
-
+    .then()
     return {
         type: "TEMP",
     }

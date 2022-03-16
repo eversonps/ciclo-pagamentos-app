@@ -10,8 +10,7 @@ const rootReducer = combineReducers({
     dashboard: DashboardReducer,
     tab: TabReducer,
     BillingCycle: BillingCycleReducer,
-    form: formReducer,
-    toastr: toastrReducer
+    form: formReducer
 })
 
 export default rootReducer
