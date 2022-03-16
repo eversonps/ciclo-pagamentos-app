@@ -19,13 +19,12 @@ export function create(values){
 }
 
 export function update(values){
-    return submit(values, "put")
+ 
 }
 
 function submit(values, method){
     return dispatch => {
-        const id = values._id ? values._id : "" 
-        axios[method](`${BASE_URL}/billingCycles/${id}`, values)
+        axios.post(`${BASE_URL}/billingCycles`, values)
         .then(resp => {
             toastr.success("Sucesso", "Operação realizada com sucesso")
             dispatch(init())

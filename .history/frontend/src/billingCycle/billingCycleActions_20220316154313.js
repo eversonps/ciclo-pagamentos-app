@@ -15,17 +15,26 @@ export function getList(){
 }
 
 export function create(values){
-    return submit(values, "post")
+    return dispatch => {
+        axios.post(`${BASE_URL}/billingCycles`, values)
+        .then(resp => {
+            toastr.success("Sucesso", "Operação realizada com sucesso")
+            dispatch(init())
+        }).catch(e => {
+            e.response.data.errors.forEach(error => {
+                toastr.error("Erro", error)
+            })
+        })
+    }
 }
 
 export function update(values){
-    return submit(values, "put")
+ 
 }
 
-function submit(values, method){
+function submit(){
     return dispatch => {
-        const id = values._id ? values._id : "" 
-        axios[method](`${BASE_URL}/billingCycles/${id}`, values)
+        axios.post(`${BASE_URL}/billingCycles`, values)
         .then(resp => {
             toastr.success("Sucesso", "Operação realizada com sucesso")
             dispatch(init())
