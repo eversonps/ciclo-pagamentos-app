@@ -9,7 +9,7 @@ import { bindActionCreators } from "redux";
 
 class BillingCycleForm extends Component {
     render(){
-        const {handleSubmit, readOnly, credits, debts} = this.props
+        const {handleSubmit, readOnly, credits} = this.props
 
         return (
             <form role="form" onSubmit={handleSubmit}>

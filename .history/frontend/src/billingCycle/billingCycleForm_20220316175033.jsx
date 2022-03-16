@@ -9,7 +9,7 @@ import { bindActionCreators } from "redux";
 
 class BillingCycleForm extends Component {
     render(){
-        const {handleSubmit, readOnly, credits, debts} = this.props
+        const {handleSubmit, readOnly, credits} = this.props
 
         return (
             <form role="form" onSubmit={handleSubmit}>
@@ -18,7 +18,6 @@ class BillingCycleForm extends Component {
                     <Field name="month" component={LabelAndInput} label="Mês" cols="12 4" placeholder="Informe o mês" readOnly={readOnly}></Field>
                     <Field name="year" component={LabelAndInput} label="Ano" cols="12 4" placeholder="Informe o ano" readOnly={readOnly}></Field>
                     <ItemList cols="12 6" list={credits} readOnly={readOnly} field="credits" legend="Créditos"></ItemList>
-                    <ItemList cols="12 6" list={debts} readOnly={readOnly} field="debts" legend="Débitos"></ItemList>
                 </div>
                 <div className="box-footer">
                     <button type="submit" className={`btn btn-${this.props.submitClass}`}>{this.props.submitLabel}</button>
