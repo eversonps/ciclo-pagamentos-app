@@ -7,7 +7,7 @@ class CreditList extends Component{
     renderRows(){
         const list = this.props.list || []
         return list.map((item, index) => (
-            <tr key={index}>
+            <tr>
                 <td><Field name={`credits[${index}].name`} component={Input} placeholder="Informe o nome" readOnly={this.props.readOnly}/></td>
                 <td><Field name={`credits[${index}].value`} component={Input} placeholder="Informe o valor" readOnly={this.props.readOnly}/></td>
                 <td></td>
