@@ -36,7 +36,6 @@ class CreditList extends Component{
                     <button type="button" className="btn btn-danger" onClick={() => this.remove(index)}>
                         <i className="fa fa-trash-o"></i>
                     </button>
-                </td>
             </tr>
         ))
     }
