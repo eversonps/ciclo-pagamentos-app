@@ -11,8 +11,9 @@ export function getList(){
 
 export function create(values){
     console.log(values)
-    axios.post(`${BASE_URL}/billingCycles`, values)
+    const request = axios.get(`${BASE_URL}/billingCycles`)
     return {
-        type: "TEMP",
+        type: "BILLING_CYCLES_FETCHED",
+        payload: request
     }
 }

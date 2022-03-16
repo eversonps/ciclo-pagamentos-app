@@ -8,8 +8,7 @@ import BillingCycleReducer from "../billingCycle/billingCycleReducer"
 const rootReducer = combineReducers({
     dashboard: DashboardReducer,
     tab: TabReducer,
-    BillingCycle: BillingCycleReducer,
-    form: formReducer
+    BillingCycle: BillingCycleReducer
 })
 
 export default rootReducer
