@@ -4,7 +4,7 @@ import LabelAndInput from "../common/form/LabelAndInput";
 
 import {init} from "./billingCycleActions";
 import {connect} from "react-redux"
-import { bindActionCreators } from "redux";
+import {bindActionCreators} from "react"
 
 class BillingCycleForm extends Component {
     render(){

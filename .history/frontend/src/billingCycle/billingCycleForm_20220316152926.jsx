@@ -4,7 +4,7 @@ import LabelAndInput from "../common/form/LabelAndInput";
 
 import {init} from "./billingCycleActions";
 import {connect} from "react-redux"
-import { bindActionCreators } from "redux";
+import {bindActionCreators} from 'react'
 
 class BillingCycleForm extends Component {
     render(){
@@ -28,4 +28,4 @@ class BillingCycleForm extends Component {
 
 const billingCycleForm = reduxForm({form: "billingCycleForm", destroyOnUnmount: false})(BillingCycleForm)
 const mapDispatchToProps = dispatch => bindActionCreators({init}, dispatch)
-export default connect(null, mapDispatchToProps)(billingCycleForm)
+export default 

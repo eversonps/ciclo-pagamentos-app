@@ -19,7 +19,12 @@ export function create(values){
         axios.post(`${BASE_URL}/billingCycles`, values)
         .then(resp => {
             toastr.success("Sucesso", "Operação realizada com sucesso")
-            dispatch(init())
+            dispatch([
+                resetForm("billingCycleForm"),
+                getList(),
+                selectTab("tabList"),
+                showTabs("tabList", "tabCreate")
+            ])
         }).catch(e => {
             e.response.data.errors.forEach(error => {
                 toastr.error("Erro", error)
@@ -40,7 +45,5 @@ export function init(){
     return [
         showTabs("tabList", "tabCreate"),
         selectTab("tabList"),
-        getList(),
-        initialize("billingCycleForm", INITIAL_VALUES)
     ]
 }
