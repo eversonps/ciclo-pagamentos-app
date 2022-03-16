@@ -12,7 +12,7 @@ class BillingCycleList extends Component{
     renderRows(){
         const list = this.props.list || []
         return list.map(bc => (
-            <tr key={bc._id}>
+            <tr key={bc.id}>
                 <td>{bc.name}</td>
                 <td>{bc.month}</td>
                 <td>{bc.year}</td>
