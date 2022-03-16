@@ -54,6 +54,6 @@ const mapStateToProps = state => ({
     list: state.BillingCycle.list
 })
 
-const mapDispatchToProps = dispatch => bindActionCreators({getList, showUpdate, showDelete}, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({getList, showUpdate}, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(BillingCycleList)

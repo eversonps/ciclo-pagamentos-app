@@ -22,7 +22,7 @@ export function update(values){
     return submit(values, "put")
 }
 
-export function remove(values){
+export function delete(values){
     return submit(values, "delete")
 }
 
