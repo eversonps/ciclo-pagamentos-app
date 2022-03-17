@@ -1,0 +1,1 @@
+const userKey = "_mymoney_user"
