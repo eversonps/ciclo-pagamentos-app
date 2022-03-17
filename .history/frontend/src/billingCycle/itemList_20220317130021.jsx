@@ -27,11 +27,11 @@ class ItemList extends Component{
             <tr key={index}>
                 <td><Field name={`${this.props.field}[${index}].name`} component={Input} placeholder="Informe o nome" readOnly={this.props.readOnly}/></td>
                 <td><Field name={`${this.props.field}[${index}].value`} component={Input} placeholder="Informe o valor" readOnly={this.props.readOnly}/></td>
-               
-                <IF test={this.props.showStatus}>
-                    <td><Field name={`${this.props.field}[${index}].status`} component={Input} placeholder="Informe o status" readOnly={this.props.readOnly}/></td>
-                </IF>
                 
+                <IF>
+                <td><Field name={`${this.props.field}[${index}].value`} component={Input} placeholder="Informe o valor" readOnly={this.props.readOnly}/></td>
+                </IF>
+
                 <td>
                     <button type="button" className="btn btn-success" onClick={() => this.add(index + 1)}>
                         <i className="fa fa-plus"></i>
@@ -57,9 +57,6 @@ class ItemList extends Component{
                             <tr>
                                 <th>Nome</th>
                                 <th>Valor</th>
-                                <IF test={this.props.showStatus}>
-                                    <th>Status</th>
-                                </IF>
                                 <th className="table-actions">Ações</th>
                             </tr>        
                         </thead>
