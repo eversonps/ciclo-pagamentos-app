@@ -18,7 +18,7 @@ const store = applyMiddleware(promise, multi, thunk)(createStore)(reducers, devT
 
 ReactDOM.render(
     <Provider store={store}>
-        <Routes />
+        <Routes></Routes>
     </Provider>,
      document.getElementById("app")
 )

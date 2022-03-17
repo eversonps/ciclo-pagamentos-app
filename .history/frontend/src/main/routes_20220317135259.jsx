@@ -11,7 +11,9 @@ export default props => (
         <Route path="/" component={App}>
             <IndexRoute component={Dashboard}></IndexRoute>
             <Route path="/billingCycles" component={BillingCycle}></Route>
-        </Route>        
+        </Route>
+        <Route path="/" component={Dashboard}></Route>
+        
         <Redirect from="*" to="/"></Redirect>
     </Router>
 )

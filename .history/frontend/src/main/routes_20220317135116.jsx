@@ -8,10 +8,8 @@ import App from "./app"
 
 export default props => (
     <Router history={hashHistory}>
-        <Route path="/" component={App}>
-            <IndexRoute component={Dashboard}></IndexRoute>
-            <Route path="/billingCycles" component={BillingCycle}></Route>
-        </Route>        
+        <Route path="/" component={Dashboard}></Route>
+        <Route path="/billingCycles" component={BillingCycle}></Route>
         <Redirect from="*" to="/"></Redirect>
     </Router>
 )
